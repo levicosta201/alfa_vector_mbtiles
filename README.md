@@ -25,7 +25,7 @@ By extending VectorTileProvider and specifying VectorMBTiles as the argument of 
 
 Add the package with the following command
 ```bash
-flutter pub add vector_mbtiles
+flutter pub add alfa_vector_mbtiles
 ```
 
 ## Usage
@@ -33,11 +33,11 @@ flutter pub add vector_mbtiles
 refer to the following. See `/example` folder for details
 
 ```dart
-VectorTileLayerWidget(
-    options: VectorTileLayerOptions(
+AlfaVectorTileLayerWidget(
+    options: AlfaVectorTileLayerOptions(
         theme: Theme,
         tileProviders: TileProviders({
-            'openmaptiles': VectorMBTilesProvider(
+            'openmaptiles': AlfaVectorMBTilesProvider(
                 mbtilesPath: '/path/to/mbtiles',
                 maximumZoom: 18)
         })

@@ -1,5 +1,5 @@
 /// Library of MB Tiles in vector format.
-library vector_mbtiles;
+library alfa_vector_mbtiles;
 
 import 'dart:typed_data';
 
@@ -9,13 +9,13 @@ import 'mbtiles_utility.dart';
 import 'provider_exception.dart';
 
 /// Vector MBTiles Provider.
-class VectorMBTilesProvider extends VectorTileProvider {
+class AlfaVectorMBTilesProvider extends VectorTileProvider {
   /// [mbtilesPath] the URL template, e.g. `'assets/data/map.mbtiles'`
   /// [maximumZoom] the maximum zoom supported by the tile provider, not to be
   ///  confused with the maximum zoom of the map widget. The map widget will
   ///  automatically use vector tiles from lower zoom levels once the maximum
   ///  supported by this provider is reached.
-  VectorMBTilesProvider({required String mbtilesPath, int maximumZoom = 16})
+  AlfaVectorMBTilesProvider({required String mbtilesPath, int maximumZoom = 16})
       : _mbtilesURL = mbtilesPath,
         _maximumZoom = maximumZoom {
     _mbTiles = MBTilesUtility(_mbtilesURL);

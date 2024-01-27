@@ -6,7 +6,7 @@ import 'package:test/test.dart';
 
 void main() {
   // keyでWidgetを取得する
-  final vectorTileLayerWidget = find.byValueKey('VectorTileLayerWidget');
+  final vectorTileLayerWidget = find.byValueKey('AlfaVectorTileLayerWidget');
   late FlutterDriver driver; // Dart2以降はNullsafetyのため lateで初期化を遅延させる
 
   // すべてのテストの前にDriverに接続する

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:vector_map_tiles/vector_map_tiles.dart';
-import 'package:vector_mbtiles/vector_mbtiles.dart';
+import 'package:alfa_vector_mbtiles/alfa_vector_mbtiles.dart';
 import 'package:vector_tile_renderer/vector_tile_renderer.dart';
 import 'package:vector_tile_renderer/vector_tile_renderer.dart'
     as vector_tile_renderer;
@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               children: [
                 VectorTileLayer(
-                  key: const Key('VectorTileLayerWidget'),
+                  key: const Key('AlfaVectorTileLayerWidget'),
                   theme: _mapTheme(context),
                   tileProviders: TileProviders(
                       {'openmaptiles': _cachingTileProvider(_basemapPath())}),
